@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <!-- Example HTML element -->
+  <div id="example-field">This is a field</div>
+
+  <script>
+    $(document).ready(function() {
+      // Define the fieldData object
+      var fieldData = {};
+
+      // Find the element using jQuery and assign it to a property of fieldData
+      var field = $('#example-field');
+      fieldData.$el = field;
+
+      // Now you can use fieldData.$el to manipulate the element
+      fieldData.$el.css('color', 'blue'); // Change the text color to blue
+
+      // Log the jQuery object to the console
+      console.log(fieldData.$el);
+    });
+  </script>
+</body>
+</html>
